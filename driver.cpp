@@ -278,8 +278,8 @@ int main() {
 	case 3:general_search(init, 3); break;
 	}
 	t2 = clock();
-	int tt;
-	tt = (static_cast<int>(t2) - t1) / CLOCKS_PER_SEC;
-	printf("Total time used is %dms.\n", 1000 * tt);
+	double tt;
+	tt = (static_cast<double>(t2) - t1) / CLOCKS_PER_SEC;
+	printf("Total time used is %.0fms.\n", 1000 * tt);
 	return 0;
 }
